@@ -21,14 +21,13 @@
             display: inline;
         }
         
-
         a{
             color:black;
             text-decoration: none;
             padding: 1vw;
         }
 
-        li:hover{
+        a:hover{
             text-decoration: underline;
         }
 
@@ -42,7 +41,7 @@
         form{
             position: fixed;
             bottom: 60vw;
-            right: 40vw;
+            right: 22.5vw;
         }
 
         footer{
@@ -52,10 +51,25 @@
             right: 30%;
         }
 
+        input{
+            display: block;
+            width: 55vw;
+            height: 30px;
+            padding: 5px;
+            margin: 0px;
+        }
+
         .belowsearch{
             position: fixed;
             bottom: 55vw;
             right: 32.5vw;
+        }
+
+        .belowsearchhover:hover{
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+            border-left: 1px solid grey;
+            border-top: 1px solid grey;
         }
 
         .topheaders{
@@ -82,14 +96,14 @@
         
         <div>
             <form action="search_bar">
-                <input type="text" id="bar">
+                <input type="text" id="bar" style="border-radius: 20px;" >
             </form>
         </div>
         
         <div class="belowsearch">
             <ul>
-                <li><a href="buscar">Buscar con google</a></li>
-                <li><a href="buscar">Me siento con suerte</a></li>
+                <li><a href="buscar" class="belowsearchhover">Buscar con google</a></li>
+                <li><a href="buscar" class="belowsearchhover">Me siento con suerte</a></li>
             </ul>
         </div>
     </body>
