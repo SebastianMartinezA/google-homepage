@@ -1,7 +1,11 @@
 <!DOCTYPE html>
     
-
     <style>
+
+        head{
+            position: fixed;
+            right: 0vw;
+        }
 
         ul{
             list-style-type: none;
@@ -16,33 +20,54 @@
         a{
             color:black;
             text-decoration: none;
+            padding: 1vw;
         }
 
         li:hover{
+            text-decoration: underline;
+        }
 
+        .center{
+            display: block;
+            position: fixed;
+            bottom: 70vw;
+            right: 35vw;
+        }
+
+        form{
+            position: fixed;
+            bottom: 60vw;
+            right: 40vw;
+        }
+
+        footer{
+            display: block;
+            position: fixed;
+            bottom: 1vw;
+            right: 30%;
         }
 
     </style>
 
     <head>
 
-        <div>
-            <ul>
-                <li><a href="gmail">Gmail</a></li>
-                <li><a href="imagenes">Imagenes</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="gmail">Gmail</a></li>
+            <li><a href="imagenes">Imagenes</a></li>
+        </ul>
 
     </head>
 
     <body>
-        
         <br>
         
-        <img src="https://www.google.com.ar/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        <form action="search_bar">
-            <input type="text" id="bar">
-        </form>
+        <img src="https://www.google.com.ar/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="center">
+        
+        <div>
+            <form action="search_bar">
+                <input type="text" id="bar">
+            </form>
+        </div>
 
     </body>
     
@@ -51,6 +76,9 @@
         <div>
             <ul>
                 <li><a href="argentina">Argentina</a></li>
+                <li><a href="google_sobre">Sobre Google</a></li>
+                <li><a href="publicidad">Publicidad</a></li>
+                <li><a href="negocios">Negocios</a></li>
             </ul>
         </div>
 
